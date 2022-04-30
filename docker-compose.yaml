@@ -17,8 +17,8 @@ services:
       - EMAIL_FROM_ADDRESS
       - EMAIL_FROM_NAME
       - SESSION_SECRET
-      - WGUI_USERNAME=alpha
-      - WGUI_PASSWORD=this-unusual-password
+      - WGUI_USERNAME
+      - WGUI_PASSWORD
       - WG_CONF_TEMPLATE
     logging:
       driver: json-file
