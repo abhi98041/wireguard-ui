@@ -27,5 +27,4 @@ services:
     volumes:
       - wireguard-ui-db:/app/db
       - wireguard-ui-config:/etc/wireguard
-    networks:
-      - nginxproxy_default
+    network_mode: host
