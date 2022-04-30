@@ -3,7 +3,7 @@ volumes:
   wireguard-ui-config:
   wireguard-ui-db:
 networks:
-  nginxproxymanager_default:
+  nginxproxy_default:
     external: true
 services:
   wg:
@@ -28,4 +28,4 @@ services:
       - .wireguard-ui-db:/app/db
       - wireguard-ui-config:/etc/wireguard
     networks:
-      - nginxproxymanager_default
+      - nginxproxy_default
