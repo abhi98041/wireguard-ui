@@ -25,7 +25,7 @@ services:
       options:
         max-size: 50m
     volumes:
-      - .wireguard-ui-db:/app/db
+      - wireguard-ui-db:/app/db
       - wireguard-ui-config:/etc/wireguard
     networks:
       - nginxproxy_default
